@@ -1,0 +1,28 @@
+<p>
+  <b>Code:</b>
+  <%=h @inventory.code %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @inventory.name %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @inventory.user_id %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @inventory.address %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @inventory.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_inventory_path(@inventory) %> |
+<%= link_to 'Back', inventories_path %>

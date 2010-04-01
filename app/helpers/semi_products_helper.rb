@@ -1,0 +1,2 @@
+module SemiProductsHelper
+end

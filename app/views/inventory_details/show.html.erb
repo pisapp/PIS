@@ -1,0 +1,28 @@
+<p>
+  <b>Inventory:</b>
+  <%=h @inventory_detail.inventory_id %>
+</p>
+
+<p>
+  <b>Storage type:</b>
+  <%=h @inventory_detail.storage_type %>
+</p>
+
+<p>
+  <b>Storage:</b>
+  <%=h @inventory_detail.storage_id %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%=h @inventory_detail.size %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @inventory_detail.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_inventory_detail_path(@inventory_detail) %> |
+<%= link_to 'Back', inventory_details_path %>

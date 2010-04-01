@@ -1,0 +1,28 @@
+<h1>Listing inventory_details</h1>
+
+<table>
+  <tr>
+    <th>Inventory</th>
+    <th>Storage type</th>
+    <th>Storage</th>
+    <th>Size</th>
+    <th>Description</th>
+  </tr>
+
+<% @inventory_details.each do |inventory_detail| %>
+  <tr>
+    <td><%=h inventory_detail.inventory_id %></td>
+    <td><%=h inventory_detail.storage_type %></td>
+    <td><%=h inventory_detail.storage_id %></td>
+    <td><%=h inventory_detail.size %></td>
+    <td><%=h inventory_detail.description %></td>
+    <td><%= link_to 'Show', inventory_detail %></td>
+    <td><%= link_to 'Edit', edit_inventory_detail_path(inventory_detail) %></td>
+    <td><%= link_to 'Destroy', inventory_detail, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New inventory_detail', new_inventory_detail_path %>

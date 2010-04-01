@@ -1,0 +1,28 @@
+<h1>Listing inventories</h1>
+
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Name</th>
+    <th>User</th>
+    <th>Address</th>
+    <th>Description</th>
+  </tr>
+
+<% @inventories.each do |inventory| %>
+  <tr>
+    <td><%=h inventory.code %></td>
+    <td><%=h inventory.name %></td>
+    <td><%=h inventory.user_id %></td>
+    <td><%=h inventory.address %></td>
+    <td><%=h inventory.description %></td>
+    <td><%= link_to 'Show', inventory %></td>
+    <td><%= link_to 'Edit', edit_inventory_path(inventory) %></td>
+    <td><%= link_to 'Destroy', inventory, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New inventory', new_inventory_path %>

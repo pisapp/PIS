@@ -1,0 +1,24 @@
+<h1>Listing semi_products</h1>
+
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+
+<% @semi_products.each do |semi_product| %>
+  <tr>
+    <td><%=h semi_product.code %></td>
+    <td><%=h semi_product.name %></td>
+    <td><%=h semi_product.description %></td>
+    <td><%= link_to 'Show', semi_product %></td>
+    <td><%= link_to 'Edit', edit_semi_product_path(semi_product) %></td>
+    <td><%= link_to 'Destroy', semi_product, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New semi_product', new_semi_product_path %>
