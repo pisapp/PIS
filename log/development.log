@@ -186,3 +186,78 @@ Migrating to AddMarterialTypeToMaterials (20100401075708)
   [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `weight_units`[0m
   [4;35;1mSQL (0.4ms)[0m   [0mdescribe `weight_units`[0m
   [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `weight_units`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100401043917)
+Migrating to CreatePositions (20100401043925)
+Migrating to CreateRoles (20100401043931)
+Migrating to CreateUserRoles (20100401043938)
+Migrating to CreateMaterialTypes (20100401044139)
+Migrating to CreateWeightUnits (20100401044147)
+Migrating to CreateQuantityUnits (20100401044156)
+Migrating to CreateInventoryTypes (20100401044203)
+Migrating to CreateMaterials (20100401044326)
+Migrating to CreateSemiProducts (20100401044332)
+Migrating to CreateProducts (20100401044339)
+Migrating to CreateInventories (20100401044347)
+Migrating to CreateInventoryDetails (20100401044353)
+Migrating to CreateMaterialExchanges (20100401044437)
+Migrating to CreateSemiProductExchanges (20100401044443)
+Migrating to CreateProductExchanges (20100401044449)
+Migrating to AddMarterialTypeToMaterials (20100401075708)
+Migrating to AddInventoryTypeToInventories (20100401080736)
+  [4;36;1mSQL (45.0ms)[0m   [0;1mALTER TABLE `inventories` ADD `inventory_type_id` int(11)[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100401080736')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `inventories`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `inventories`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `inventories`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `inventory_details`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `inventory_details`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `inventory_details`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `inventory_types`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `inventory_types`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `inventory_types`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `material_exchanges`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `material_exchanges`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `material_exchanges`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `material_types`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `material_types`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `material_types`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `materials`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `materials`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `materials`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `positions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `positions`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `positions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `product_exchanges`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `product_exchanges`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `product_exchanges`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `quantity_units`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `quantity_units`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `quantity_units`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `roles`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `roles`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `semi_product_exchanges`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `semi_product_exchanges`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `semi_product_exchanges`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `semi_products`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `semi_products`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `semi_products`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `user_roles`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `user_roles`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW KEYS FROM `user_roles`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `weight_units`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `weight_units`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `weight_units`[0m

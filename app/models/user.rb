@@ -14,5 +14,9 @@ class User < ActiveRecord::Base
               :foreign_key => "created_by"
   has_many    :product_exchange,
               :class_name => "ProductExchange",
-              :foreign_key => "created_by"              
+              :foreign_key => "created_by"    
+  
+  # Validation
+  validates_presence_of :username, :fullname, :email
+  validates_uniqueness_of :username                
 end
