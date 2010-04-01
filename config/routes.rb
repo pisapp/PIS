@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :product_exchanges
+
+  map.resources :semi_product_exchanges
+
+  map.resources :material_exchanges
+
   map.resources :inventory_details
 
   map.resources :inventories

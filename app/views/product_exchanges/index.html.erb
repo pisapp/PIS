@@ -1,0 +1,36 @@
+<h1>Listing product_exchanges</h1>
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Inventory</th>
+    <th>Product</th>
+    <th>Quantity unit</th>
+    <th>Size</th>
+    <th>Reason</th>
+    <th>Created date</th>
+    <th>Created by</th>
+    <th>Description</th>
+  </tr>
+
+<% @product_exchanges.each do |product_exchange| %>
+  <tr>
+    <td><%=h product_exchange.type %></td>
+    <td><%=h product_exchange.inventory_id %></td>
+    <td><%=h product_exchange.product_id %></td>
+    <td><%=h product_exchange.quantity_unit_id %></td>
+    <td><%=h product_exchange.size %></td>
+    <td><%=h product_exchange.reason %></td>
+    <td><%=h product_exchange.created_date %></td>
+    <td><%=h product_exchange.created_by %></td>
+    <td><%=h product_exchange.description %></td>
+    <td><%= link_to 'Show', product_exchange %></td>
+    <td><%= link_to 'Edit', edit_product_exchange_path(product_exchange) %></td>
+    <td><%= link_to 'Destroy', product_exchange, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New product_exchange', new_product_exchange_path %>

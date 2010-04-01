@@ -1,0 +1,36 @@
+<h1>Listing material_exchanges</h1>
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Inventory</th>
+    <th>Material</th>
+    <th>Weight unit</th>
+    <th>Size</th>
+    <th>Reason</th>
+    <th>Created date</th>
+    <th>Created by</th>
+    <th>Description</th>
+  </tr>
+
+<% @material_exchanges.each do |material_exchange| %>
+  <tr>
+    <td><%=h material_exchange.type %></td>
+    <td><%=h material_exchange.inventory_id %></td>
+    <td><%=h material_exchange.material_id %></td>
+    <td><%=h material_exchange.weight_unit_id %></td>
+    <td><%=h material_exchange.size %></td>
+    <td><%=h material_exchange.reason %></td>
+    <td><%=h material_exchange.created_date %></td>
+    <td><%=h material_exchange.created_by %></td>
+    <td><%=h material_exchange.description %></td>
+    <td><%= link_to 'Show', material_exchange %></td>
+    <td><%= link_to 'Edit', edit_material_exchange_path(material_exchange) %></td>
+    <td><%= link_to 'Destroy', material_exchange, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New material_exchange', new_material_exchange_path %>

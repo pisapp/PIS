@@ -1,0 +1,48 @@
+<h1>Editing semi_product_exchange</h1>
+
+<% form_for(@semi_product_exchange) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </p>
+  <p>
+    <%= f.label :inventory_id %><br />
+    <%= f.text_field :inventory_id %>
+  </p>
+  <p>
+    <%= f.label :semi_product_id %><br />
+    <%= f.text_field :semi_product_id %>
+  </p>
+  <p>
+    <%= f.label :weight_unit_id %><br />
+    <%= f.text_field :weight_unit_id %>
+  </p>
+  <p>
+    <%= f.label :size %><br />
+    <%= f.text_field :size %>
+  </p>
+  <p>
+    <%= f.label :reason %><br />
+    <%= f.text_area :reason %>
+  </p>
+  <p>
+    <%= f.label :created_date %><br />
+    <%= f.datetime_select :created_date %>
+  </p>
+  <p>
+    <%= f.label :created_by %><br />
+    <%= f.text_field :created_by %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @semi_product_exchange %> |
+<%= link_to 'Back', semi_product_exchanges_path %>

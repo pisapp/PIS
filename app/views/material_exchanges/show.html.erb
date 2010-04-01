@@ -1,0 +1,48 @@
+<p>
+  <b>Type:</b>
+  <%=h @material_exchange.type %>
+</p>
+
+<p>
+  <b>Inventory:</b>
+  <%=h @material_exchange.inventory_id %>
+</p>
+
+<p>
+  <b>Material:</b>
+  <%=h @material_exchange.material_id %>
+</p>
+
+<p>
+  <b>Weight unit:</b>
+  <%=h @material_exchange.weight_unit_id %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%=h @material_exchange.size %>
+</p>
+
+<p>
+  <b>Reason:</b>
+  <%=h @material_exchange.reason %>
+</p>
+
+<p>
+  <b>Created date:</b>
+  <%=h @material_exchange.created_date %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%=h @material_exchange.created_by %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @material_exchange.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_material_exchange_path(@material_exchange) %> |
+<%= link_to 'Back', material_exchanges_path %>

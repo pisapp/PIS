@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  type: 1
+  inventory_id: 1
+  material_id: 1
+  weight_unit_id: 1
+  size: 1
+  reason: MyText
+  created_date: 2010-04-01 11:44:37
+  created_by: 1
+  description: MyText
+
+two:
+  type: 1
+  inventory_id: 1
+  material_id: 1
+  weight_unit_id: 1
+  size: 1
+  reason: MyText
+  created_date: 2010-04-01 11:44:37
+  created_by: 1
+  description: MyText

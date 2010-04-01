@@ -1,0 +1,48 @@
+<p>
+  <b>Type:</b>
+  <%=h @product_exchange.type %>
+</p>
+
+<p>
+  <b>Inventory:</b>
+  <%=h @product_exchange.inventory_id %>
+</p>
+
+<p>
+  <b>Product:</b>
+  <%=h @product_exchange.product_id %>
+</p>
+
+<p>
+  <b>Quantity unit:</b>
+  <%=h @product_exchange.quantity_unit_id %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%=h @product_exchange.size %>
+</p>
+
+<p>
+  <b>Reason:</b>
+  <%=h @product_exchange.reason %>
+</p>
+
+<p>
+  <b>Created date:</b>
+  <%=h @product_exchange.created_date %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%=h @product_exchange.created_by %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @product_exchange.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_product_exchange_path(@product_exchange) %> |
+<%= link_to 'Back', product_exchanges_path %>
