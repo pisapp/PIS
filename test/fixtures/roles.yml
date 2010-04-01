@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  can_not_delete: false
+  description: MyText
+
+two:
+  name: MyString
+  can_not_delete: false
+  description: MyText

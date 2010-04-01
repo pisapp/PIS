@@ -1,0 +1,68 @@
+<p>
+  <b>Username:</b>
+  <%=h @user.username %>
+</p>
+
+<p>
+  <b>Hash password:</b>
+  <%=h @user.hash_password %>
+</p>
+
+<p>
+  <b>Salt:</b>
+  <%=h @user.salt %>
+</p>
+
+<p>
+  <b>Fullname:</b>
+  <%=h @user.fullname %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%=h @user.position_id %>
+</p>
+
+<p>
+  <b>Sex:</b>
+  <%=h @user.sex %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @user.email %>
+</p>
+
+<p>
+  <b>Is admin:</b>
+  <%=h @user.is_admin %>
+</p>
+
+<p>
+  <b>Is blocked:</b>
+  <%=h @user.is_blocked %>
+</p>
+
+<p>
+  <b>Can not delete:</b>
+  <%=h @user.can_not_delete %>
+</p>
+
+<p>
+  <b>Mobile phone:</b>
+  <%=h @user.mobile_phone %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @user.address %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @user.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
