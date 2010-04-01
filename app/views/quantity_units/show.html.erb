@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @quantity_unit.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @quantity_unit.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_quantity_unit_path(@quantity_unit) %> |
+<%= link_to 'Back', quantity_units_path %>

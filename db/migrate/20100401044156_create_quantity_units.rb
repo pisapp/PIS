@@ -1,0 +1,14 @@
+class CreateQuantityUnits < ActiveRecord::Migration
+  def self.up
+    create_table :quantity_units do |t|
+      t.string :name
+      t.text :description
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :quantity_units
+  end
+end

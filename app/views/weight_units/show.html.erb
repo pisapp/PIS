@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @weight_unit.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @weight_unit.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_weight_unit_path(@weight_unit) %> |
+<%= link_to 'Back', weight_units_path %>

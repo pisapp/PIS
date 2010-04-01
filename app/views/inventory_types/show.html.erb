@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @inventory_type.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @inventory_type.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_inventory_type_path(@inventory_type) %> |
+<%= link_to 'Back', inventory_types_path %>

@@ -1,0 +1,22 @@
+<h1>Listing weight_units</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+
+<% @weight_units.each do |weight_unit| %>
+  <tr>
+    <td><%=h weight_unit.name %></td>
+    <td><%=h weight_unit.description %></td>
+    <td><%= link_to 'Show', weight_unit %></td>
+    <td><%= link_to 'Edit', edit_weight_unit_path(weight_unit) %></td>
+    <td><%= link_to 'Destroy', weight_unit, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New weight_unit', new_weight_unit_path %>

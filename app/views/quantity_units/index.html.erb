@@ -1,0 +1,22 @@
+<h1>Listing quantity_units</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+
+<% @quantity_units.each do |quantity_unit| %>
+  <tr>
+    <td><%=h quantity_unit.name %></td>
+    <td><%=h quantity_unit.description %></td>
+    <td><%= link_to 'Show', quantity_unit %></td>
+    <td><%= link_to 'Edit', edit_quantity_unit_path(quantity_unit) %></td>
+    <td><%= link_to 'Destroy', quantity_unit, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New quantity_unit', new_quantity_unit_path %>

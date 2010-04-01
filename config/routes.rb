@@ -1,4 +1,12 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :inventory_types
+
+  map.resources :quantity_units
+
+  map.resources :weight_units
+
+  map.resources :material_types
+
   map.resources :user_roles
 
   map.resources :roles
