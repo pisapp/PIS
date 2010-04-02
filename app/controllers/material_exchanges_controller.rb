@@ -28,6 +28,7 @@ class MaterialExchangesController < ApplicationController
   # GET /material_exchanges/new.xml
   def new
     @material_exchange = MaterialExchange.new
+    @exchange_details = MaterialExchange.find(:all, :order => "created_at DESC")
 
     respond_to do |format|
       format.html # new.html.erb
@@ -47,8 +48,22 @@ class MaterialExchangesController < ApplicationController
 
     respond_to do |format|
       if @material_exchange.save
+        # Input to inventory
+        inventory = InventoryDetail.find(:first, :conditions => ["storage_id = ? and inventory_id = ?", 
+                                                                  @material_exchange.material_id,
+                                                                  @material_exchange.inventory_id])
+        inventory = InventoryDetail.new if inventory.nil?
+        inventory.inventory_id = @material_exchange.inventory_id
+        inventory.storage_type = 0
+        inventory.storage_id = @material_exchange.material_id
+        inventory.size = 0 if inventory.size.nil?
+        inventory.size = @material_exchange.exchange_type == 0 ? 
+                         inventory.size + @material_exchange.size :
+                         inventory.size - @material_exchange.size 
+        inventory.save                         
+        # Redirect                         
         flash[:notice] = 'MaterialExchange was successfully created.'
-        format.html { redirect_to(@material_exchange) }
+        format.html { redirect_to new_material_exchange_path }
         format.xml  { render :xml => @material_exchange, :status => :created, :location => @material_exchange }
       else
         format.html { render :action => "new" }

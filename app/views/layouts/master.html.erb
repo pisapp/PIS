@@ -12,17 +12,19 @@
     <!-- Container -->
     <div>
     	<div>
+    		<% if session[:username] %>
     		<div style="float: right; text-align: right">
     			Xin chào, <%= session[:username] %>! <br/>
 				[<%= link_to "Đăng Xuất", logout_url %>]	
     		</div>
+			<% end %>
     		<%= image_tag("pis_logo.png") %>			 
-			[<%= link_to "Dashboard", root_url %>] -
-			[<%= link_to "Nguyên Liệu", materials_url %>] -
-			[<%= link_to "Bán Thành Phẩm", semi_products_url %>] - 
-			[<%= link_to "Thành Phẩm", products_url %>] -
-			[<%= link_to "Kho", inventories_url %>] -
+			[<%= link_to "Dashboard", root_url %>] -			
+			[<%= link_to "Sản Xuất", inventories_url %>] -
+			[<%= link_to "Thông Tin", products_url %>] -
+			[Báo Cáo] -
 			[<%= link_to "Hệ Thống", users_url %>]
+			<hr/>
     	</div>
 		<div>
 			<%= yield  %>	

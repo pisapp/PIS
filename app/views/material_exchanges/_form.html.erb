@@ -1,0 +1,55 @@
+<% form_for(@material_exchange) do |f| %>
+  <%= f.error_messages %>
+	
+	<table class="tblForm">
+		<tr>
+			<td colspan="2">
+				<%= f.label "Ngày nhập:" %>
+				<%= Date.today %>
+				<br/>
+				<%= f.label "Người nhập:" %>
+				<%= session[:username] %>
+			</td>
+			<td colspan="2">
+				<%= f.label "Loại" %>
+				<%= f.select :exchange_type, [["Nhập", 0], ["Xuất", 1]] %>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<%= f.label "Kho" %><br />
+				<%= f.collection_select :inventory_id, Inventory.all, :id, :code %>			
+			</td>
+			<td>
+			    <%= f.label "Nguyên Liệu" %><br />
+				<%= f.collection_select :material_id, Material.all, :id, :code %>
+			</td>
+			<td>				
+				<%= f.label "Đơn Vị" %><br />
+				<%= f.collection_select :weight_unit_id, WeightUnit.all, :id, :name %>
+			</td>	
+			<td>
+				<%= f.label "Số Lượng" %><br />
+    			<%= f.text_field :size, {:size => 8} %>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4">
+				<%= f.label "Ly do" %><br />
+    			<%= f.text_area :reason %>
+			</td>
+		</tr>
+		<tr>			
+			<td colspan="4">
+				<%= f.label "Diễn giải" %><br />
+    			<%= f.text_area :description %>			
+			</td>
+		</tr>
+	</table>  
+	
+    <%= f.hidden_field :created_date, :value => Time.now %>
+    <%= f.hidden_field :created_by, :value => session[:user_id] %>
+  <p>
+    <%= f.submit 'Lưu Lại' %>
+  </p>
+<% end %>

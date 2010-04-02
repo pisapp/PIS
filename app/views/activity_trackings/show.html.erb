@@ -1,0 +1,28 @@
+<p>
+  <b>User:</b>
+  <%=h @activity_tracking.user_id %>
+</p>
+
+<p>
+  <b>Action:</b>
+  <%=h @activity_tracking.action %>
+</p>
+
+<p>
+  <b>Item type:</b>
+  <%=h @activity_tracking.item_type %>
+</p>
+
+<p>
+  <b>Item:</b>
+  <%=h @activity_tracking.item_id %>
+</p>
+
+<p>
+  <b>Created date:</b>
+  <%=h @activity_tracking.created_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_activity_tracking_path(@activity_tracking) %> |
+<%= link_to 'Back', activity_trackings_path %>

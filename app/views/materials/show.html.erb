@@ -1,18 +1,36 @@
-<p>
-  <b>Code:</b>
-  <%=h @material.code %>
-</p>
+<h1>Nguyên Liệu: <%=h @material.code %></h1>
+
+<div style="float: right">	
+	<table class="tblForm">
+		<tr>
+			<td>
+				<b>Tên Nguyên Liệu:</b><br/>
+  				<%=h @material.name %>			
+			</td>
+		</tr>
+		<tr>	
+			<td>
+				<b>Ghi Chú:</b><br/>
+  				<%=h @material.description %>			
+			</td>
+		</tr>
+	</table>
+</div>
+
+<div>
+	<table class="tblNoBorder">
+		<tr style="vertical-align: top">
+			<td>
+				<%= render :partial => "storage" %>			
+			</td>
+			<td>
+				<%= render :partial => "exchange" %>			
+			</td>
+		</tr>				
+	</table>	
+</div>
 
 <p>
-  <b>Name:</b>
-  <%=h @material.name %>
+	<%= link_to 'Cập Nhật', edit_material_path(@material) %> |
+	<%= link_to 'Danh Sách', materials_path %>  
 </p>
-
-<p>
-  <b>Description:</b>
-  <%=h @material.description %>
-</p>
-
-
-<%= link_to 'Edit', edit_material_path(@material) %> |
-<%= link_to 'Back', materials_path %>

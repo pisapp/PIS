@@ -1,0 +1,23 @@
+<% form_for(@inventory) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label "Mã Số" %><br />
+    <%= f.text_field :code %>
+  </p>
+  <p>
+    <%= f.label "Tên Kho" %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label "Địa Chỉ" %><br />
+    <%= f.text_field :address %>
+  </p>
+  <p>
+    <%= f.label "Ghi Chú" %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.submit 'Lưu Lại' %>
+  </p>
+<% end %>

@@ -4,20 +4,20 @@
     </p>
 <% end %>
 
-<h1>Login Form</h1>
+<h1>Đăng Nhập</h1>
 
 <div>
     <% form_tag do %>
         <p>
-            Username<br/>
+            Tài Khoản<br/>
             <%= text_field_tag :username, params[:username] %>
         </p>
         <p>
-            Password<br/>
+            Mật Khẩu<br/>
             <%= password_field_tag :password, params[:password] %>
         </p>
         <p>
-            <%= submit_tag "Login" %>
+            <%= submit_tag "Đăng Nhập" %>
         </p>
     <% end %>
 </div>

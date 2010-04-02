@@ -1,0 +1,32 @@
+<h1>Editing activity_tracking</h1>
+
+<% form_for(@activity_tracking) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.label :action %><br />
+    <%= f.text_field :action %>
+  </p>
+  <p>
+    <%= f.label :item_type %><br />
+    <%= f.text_field :item_type %>
+  </p>
+  <p>
+    <%= f.label :item_id %><br />
+    <%= f.text_field :item_id %>
+  </p>
+  <p>
+    <%= f.label :created_date %><br />
+    <%= f.datetime_select :created_date %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @activity_tracking %> |
+<%= link_to 'Back', activity_trackings_path %>

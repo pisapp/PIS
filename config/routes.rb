@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :activity_trackings
+
   map.resources :product_exchanges
 
   map.resources :semi_product_exchanges

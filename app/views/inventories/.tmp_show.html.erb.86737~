@@ -1,0 +1,20 @@
+<h1>Kho: <%=h @inventory.code %></h1>
+
+<p>
+  <b>Tên Kho:</b><br/>
+  <%=h @inventory.name %>
+</p>
+
+<p>
+  <b>Địa Chỉ:</b><br/>
+  <%=h @inventory.address %>
+</p>
+
+<p>
+  <b>Ghi Chú:</b><br/>
+  <%=h @inventory.description %>
+</p>
+
+
+<%= link_to 'Cập Nhật', edit_inventory_path(@inventory) %> |
+<%= link_to 'Danh Sách', inventories_path %>

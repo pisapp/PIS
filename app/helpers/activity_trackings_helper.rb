@@ -1,0 +1,2 @@
+module ActivityTrackingsHelper
+end

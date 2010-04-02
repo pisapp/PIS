@@ -7,6 +7,7 @@ class Inventory < ActiveRecord::Base
   has_many      :material_exchanges
   has_many      :semi_product_exchanges
   has_many      :product_exchanges
+  has_many      :inventory_details
   
   # Validation
   validates_presence_of :code, :name, :address

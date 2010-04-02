@@ -1,0 +1,13 @@
+<%= render :partial => "inventories/header" %>
+ 
+<div style="float: right">
+	<h1>Danh Sách</h1>
+	<%= render :partial => "list" %>
+</div>	 
+ 
+<div>
+	<h1>Xuất Nhập Nguyên Liệu</h1>
+	<%= render :partial => "form" %>
+</div>	
+
+<%= link_to 'Danh Sách', material_exchanges_path %>

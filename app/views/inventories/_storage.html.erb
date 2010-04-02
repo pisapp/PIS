@@ -1,0 +1,37 @@
+<table class="tblHistory">
+	<tr>
+		<th width="200px">
+			<h1>Nguyên Liệu</h1>
+		</th>
+		<th width="200px">
+			<h1>Bán Thành Phẩm</h1>
+		</th>
+		<th width="200px">
+			<h1>Thành Phẩm</h1>
+		</th>
+	</tr>
+	<% @inventory.inventory_details.each do |detail| %>
+	<tr>
+		<td>
+			<% if detail.storage_type == 0 %>
+				<table class="tblNoBorder">
+					<tr>
+						<td>
+							<%= detail.material.code %>
+						</td>
+						<td>
+							<%= detail.size %> kg
+						</td>
+					</tr>
+				</table>
+			<% end %>
+		</td>	
+		<td>
+			
+		</td>
+		<td>
+			
+		</td>
+	</tr>
+	<% end %>
+</table>

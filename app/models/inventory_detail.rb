@@ -8,5 +8,6 @@ class InventoryDetail < ActiveRecord::Base
               :foreign_key => "storage_id"
   belongs_to  :products,
               :class_name => "Product",
-              :foreign_key => "storage_id"              
+              :foreign_key => "storage_id"         
+  belongs_to  :inventory              
 end

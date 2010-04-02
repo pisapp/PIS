@@ -1,0 +1,4 @@
+[<%= link_to "Kho", inventories_url %>] -
+[<%= link_to "Xuất/Nhập Nguyên Liệu", new_material_exchange_path %>] -
+[Xuất/Nhập Bán Thành Phẩm] - 
+[Xuất/Nhập Thành Phẩm]

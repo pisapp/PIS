@@ -1,0 +1,15 @@
+<h1>Nguyên Liệu: <%=h @material.code %></h1>
+
+<p>
+  <b>Tên Nguyên Liệu:</b><br/>
+  <%=h @material.name %>
+</p>
+
+<p>
+  <b>Ghi Chú:</b><br/>
+  <%=h @material.description %>
+</p>
+
+
+<%= link_to 'Cập Nhật', edit_material_path(@material) %> |
+<%= link_to 'Danh Sách', materials_path %>

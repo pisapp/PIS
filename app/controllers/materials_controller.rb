@@ -17,6 +17,9 @@ class MaterialsController < ApplicationController
   # GET /materials/1.xml
   def show
     @material = Material.find(params[:id])
+    @inventory_details = InventoryDetail.find(:all, :conditions => ["storage_type = 0 and storage_id = ?", @material.id])
+    @exchange_details = MaterialExchange.find(:all, :conditions => ["material_id = ?", @material.id], 
+                                                    :order => "created_at DESC")
 
     respond_to do |format|
       format.html # show.html.erb

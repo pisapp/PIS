@@ -9,7 +9,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100401080736) do
+ActiveRecord::Schema.define(:version => 20100402125254) do
+
+  create_table "activity_trackings", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "action"
+    t.integer  "item_type"
+    t.integer  "item_id"
+    t.datetime "created_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "inventories", :force => true do |t|
     t.string   "code"
@@ -40,7 +50,7 @@ ActiveRecord::Schema.define(:version => 20100401080736) do
   end
 
   create_table "material_exchanges", :force => true do |t|
-    t.integer  "type"
+    t.integer  "exchange_type"
     t.integer  "inventory_id"
     t.integer  "material_id"
     t.integer  "weight_unit_id"
@@ -78,7 +88,7 @@ ActiveRecord::Schema.define(:version => 20100401080736) do
   end
 
   create_table "product_exchanges", :force => true do |t|
-    t.integer  "type"
+    t.integer  "exchange_type"
     t.integer  "inventory_id"
     t.integer  "product_id"
     t.integer  "quantity_unit_id"
@@ -115,7 +125,7 @@ ActiveRecord::Schema.define(:version => 20100401080736) do
   end
 
   create_table "semi_product_exchanges", :force => true do |t|
-    t.integer  "type"
+    t.integer  "exchange_type"
     t.integer  "inventory_id"
     t.integer  "semi_product_id"
     t.integer  "weight_unit_id"

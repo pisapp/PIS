@@ -1,0 +1,19 @@
+<table class="tblHistory">	
+	<% MaterialExchange.all.each do |material_exchange| %>
+		<tr>
+			<td>
+				<%= image_tag material_exchange.exchange_type == 0 ? "icon/import_material.png" : "icon/export_material.png" %>
+				<font color="#666666">
+					<%=  material_exchange.created_date.strftime("%H:%M") %>
+				</font>
+				<%= material_exchange.creator.username %>
+				<%= material_exchange.exchange_type == 0 ? "nhập" : "xuất" %>						
+				<%= material_exchange.size %> 
+				<%= material_exchange.weight_unit.name %>	
+				<%= material_exchange.material.code %>	
+				ở kho	
+				<%= link_to material_exchange.inventory.code, material_exchange.inventory %>
+			</td>
+		</tr>	
+	<% end %>
+</table>

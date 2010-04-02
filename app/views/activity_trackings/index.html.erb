@@ -1,0 +1,28 @@
+<h1>Listing activity_trackings</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Action</th>
+    <th>Item type</th>
+    <th>Item</th>
+    <th>Created date</th>
+  </tr>
+
+<% @activity_trackings.each do |activity_tracking| %>
+  <tr>
+    <td><%=h activity_tracking.user_id %></td>
+    <td><%=h activity_tracking.action %></td>
+    <td><%=h activity_tracking.item_type %></td>
+    <td><%=h activity_tracking.item_id %></td>
+    <td><%=h activity_tracking.created_date %></td>
+    <td><%= link_to 'Show', activity_tracking %></td>
+    <td><%= link_to 'Edit', edit_activity_tracking_path(activity_tracking) %></td>
+    <td><%= link_to 'Destroy', activity_tracking, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New activity_tracking', new_activity_tracking_path %>

@@ -1,0 +1,21 @@
+<table class="tblHistory">	
+	<% MaterialExchange.all.each do |material_exchange| %>
+		<tr>
+			<td>
+				<% if material_exchange.exchange_type %>
+					<%= image_tag material_exchange.exchange_type == 0 ? "icon/import_material.png" : "icon/export_material.png" %>
+				<% end %>		
+			</td>
+			<td>
+				<%= material_exchange.inventory.code %>		
+			</td>
+			<td>
+				<%= material_exchange.size %> 
+				<%= material_exchange.weight_unit.name %>		
+			</td>
+			<td>
+				<%= material_exchange.material.code %>		
+			</td>
+		</tr>	
+	<% end %>
+</table>

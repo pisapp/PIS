@@ -1,0 +1,19 @@
+<% form_for(@material) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label "Mã Số" %><br />
+    <%= f.text_field :code %>
+  </p>
+  <p>
+    <%= f.label "Tên Nguyên Liệu" %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label "Ghi Chú" %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.submit 'Lưu Lại' %>
+  </p>
+<% end %>
