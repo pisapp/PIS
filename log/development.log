@@ -1311,3 +1311,877 @@ Processing UsersController#login (for ::ffff:127.0.0.1 at 2010-04-02 16:30:36) [
 Rendering template within layouts/master
 Rendering users/login
 Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/log/in]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:36:57) [GET]
+Rendering template within layouts/master
+Rendering users/dashboard
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:37:03) [GET]
+Redirected to http://localhost:3000/users/log/in
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#login (for ::ffff:127.0.0.1 at 2010-04-02 16:37:03) [GET]
+  Parameters: {"method"=>{"post"=>:get}}
+Rendering template within layouts/master
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/log/in]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#login (for ::ffff:127.0.0.1 at 2010-04-02 16:37:09) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"1/+26fBp+fkIAERQIAnA1U0sAXKrXPAbQkN09UqUr8U=", "username"=>"administrator", "password"=>"pass@word1"}
+  [4;36;1mUser Columns (5.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'administrator') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 15ms (DB: 6) | 302 Found [http://localhost/users/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:37:09) [GET]
+Rendering template within layouts/master
+Rendering users/dashboard
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#logout (for ::ffff:127.0.0.1 at 2010-04-02 16:37:18) [GET]
+  Parameters: {"method"=>{"post"=>:get}}
+Redirected to http://localhost:3000/users/log/in
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/users/log/out]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#login (for ::ffff:127.0.0.1 at 2010-04-02 16:37:18) [GET]
+  Parameters: {"method"=>{"post"=>:get}}
+Rendering template within layouts/master
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/log/in]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:37:20) [GET]
+Redirected to http://localhost:3000/users/log/in
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/users/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#login (for ::ffff:127.0.0.1 at 2010-04-02 16:37:20) [GET]
+  Parameters: {"method"=>{"post"=>:get}}
+Rendering template within layouts/master
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/log/in]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#login (for ::ffff:127.0.0.1 at 2010-04-02 16:37:26) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"Ug0+4XQhpwlkkQrDptlqipWy4vgkUphq/IQcXzxejG8=", "username"=>"administrator", "password"=>"pass@word1"}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'administrator') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 12ms (DB: 2) | 302 Found [http://localhost/users/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:37:26) [GET]
+Rendering template within layouts/master
+Rendering users/dashboard
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:40:27) [GET]
+Rendering template within layouts/master
+Rendering users/dashboard
+
+ActionView::TemplateError (material_url failed to generate from {:controller=>"materials", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["materials", :id] - are they all satisfied?) on line #16 of app/views/layouts/master.html.erb:
+13:     <div>
+14:     	<div>
+15:     		<%= image_tag("pis_logo.png") %>
+16: 			<%= link_to "Nguyên Liệu", material_url %> |
+17: 			<%= session[:username] %> |
+18: 			[<%= link_to "Logout", logout_url %>]
+19:     	</div>
+
+    (eval):16:in `material_url'
+    app/views/layouts/master.html.erb:16
+    /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:40:46) [GET]
+Rendering template within layouts/master
+Rendering users/dashboard
+
+ActionView::TemplateError (material_url failed to generate from {:controller=>"materials", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["materials", :id] - are they all satisfied?) on line #16 of app/views/layouts/master.html.erb:
+13:     <div>
+14:     	<div>
+15:     		<%= image_tag("pis_logo.png") %>
+16: 			<%= link_to "Nguyên Liệu", material_path %> |
+17: 			<%= session[:username] %> |
+18: 			[<%= link_to "Logout", logout_url %>]
+19:     	</div>
+
+    (eval):16:in `material_path'
+    app/views/layouts/master.html.erb:16
+    /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:40:58) [GET]
+Rendering template within layouts/master
+Rendering users/dashboard
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:42:45) [GET]
+Rendering template within layouts/master
+Rendering users/dashboard
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:42:51) [GET]
+  [4;36;1mMaterial Load (48.7ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 70ms (View: 16, DB: 49) | 200 OK [http://localhost/materials]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SemiProductsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:42:52) [GET]
+  [4;35;1mSemiProduct Load (78.6ms)[0m   [0mSELECT * FROM `semi_products` [0m
+Rendering template within layouts/master
+Rendering semi_products/index
+Completed in 103ms (View: 19, DB: 79) | 200 OK [http://localhost/semi_products]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:42:54) [GET]
+  [4;36;1mProduct Load (2.2ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/master
+Rendering products/index
+Completed in 14ms (View: 7, DB: 3) | 200 OK [http://localhost/products]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InventoriesController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:42:54) [GET]
+  [4;35;1mInventory Load (55.9ms)[0m   [0mSELECT * FROM `inventories` [0m
+Rendering template within layouts/master
+Rendering inventories/index
+Completed in 81ms (View: 19, DB: 56) | 200 OK [http://localhost/inventories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:42:55) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 14ms (View: 7, DB: 2) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:43:10) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:43:26) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 17ms (View: 10, DB: 2) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:43:35) [GET]
+  [4;36;1mMaterial Load (1.2ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/materials]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SemiProductsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:43:36) [GET]
+  [4;35;1mSemiProduct Load (0.2ms)[0m   [0mSELECT * FROM `semi_products` [0m
+Rendering template within layouts/master
+Rendering semi_products/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/semi_products]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:43:37) [GET]
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/master
+Rendering products/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/products]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InventoriesController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:43:37) [GET]
+  [4;35;1mInventory Load (0.2ms)[0m   [0mSELECT * FROM `inventories` [0m
+Rendering template within layouts/master
+Rendering inventories/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/inventories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:43:39) [GET]
+  [4;36;1mMaterial Load (0.2ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/materials]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:44:01) [GET]
+  [4;35;1mMaterial Load (0.4ms)[0m   [0mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/materials]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:44:05) [GET]
+  [4;36;1mMaterial Load (0.2ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/materials]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:44:23) [GET]
+  [4;35;1mMaterial Load (0.2ms)[0m   [0mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/materials]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:44:49) [GET]
+  [4;36;1mMaterial Load (0.2ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 53ms (View: 6, DB: 0) | 200 OK [http://localhost/materials]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:45:01) [GET]
+  [4;35;1mMaterial Load (0.3ms)[0m   [0mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/materials]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:46:02) [GET]
+  [4;36;1mMaterial Load (0.2ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/materials]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:46:40) [GET]
+  [4;35;1mMaterial Load (0.2ms)[0m   [0mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/materials]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:47:01) [GET]
+  [4;36;1mMaterial Load (0.2ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/materials]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:47:06) [GET]
+  [4;35;1mMaterial Load (0.2ms)[0m   [0mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/materials]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:47:44) [GET]
+  [4;36;1mMaterial Load (0.7ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/materials]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:47:55) [GET]
+  [4;35;1mMaterial Load (0.3ms)[0m   [0mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/materials]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:48:06) [GET]
+  [4;36;1mMaterial Load (0.3ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/materials]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:48:48) [GET]
+  [4;35;1mMaterial Load (0.2ms)[0m   [0mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/materials]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:49:12) [GET]
+  [4;36;1mMaterial Load (0.2ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/materials]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:49:25) [GET]
+  [4;35;1mMaterial Load (0.2ms)[0m   [0mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/materials]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:51:34) [GET]
+  [4;36;1mMaterial Load (0.2ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/materials]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:52:00) [GET]
+  [4;35;1mMaterial Load (1.5ms)[0m   [0mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/materials]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:52:18) [GET]
+  [4;36;1mMaterial Load (0.3ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 58ms (View: 4, DB: 0) | 200 OK [http://localhost/materials]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:52:34) [GET]
+  [4;35;1mMaterial Load (0.2ms)[0m   [0mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/materials]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:52:46) [GET]
+  [4;36;1mMaterial Load (0.2ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/materials]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:52:56) [GET]
+  [4;35;1mMaterial Load (0.2ms)[0m   [0mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/materials]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:52:57) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:53:09) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 57ms (View: 8, DB: 2) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:53:49) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:54:02) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 16ms (View: 8, DB: 2) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:54:17) [GET]
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 16ms (View: 8, DB: 2) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:54:36) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:54:51) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 15ms (View: 7, DB: 2) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:55:02) [GET]
+  [4;36;1mMaterial Load (0.2ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/materials]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SemiProductsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:55:06) [GET]
+  [4;35;1mSemiProduct Load (0.3ms)[0m   [0mSELECT * FROM `semi_products` [0m
+Rendering template within layouts/master
+Rendering semi_products/index
+Completed in 49ms (View: 3, DB: 0) | 200 OK [http://localhost/semi_products]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:55:07) [GET]
+  [4;36;1mMaterial Load (0.2ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/materials]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SemiProductsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:55:10) [GET]
+  [4;35;1mSemiProduct Load (0.3ms)[0m   [0mSELECT * FROM `semi_products` [0m
+Rendering template within layouts/master
+Rendering semi_products/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/semi_products]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SemiProductsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:55:59) [GET]
+  [4;36;1mSemiProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `semi_products` [0m
+Rendering template within layouts/master
+Rendering semi_products/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/semi_products]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:56:02) [GET]
+  [4;35;1mMaterial Load (0.2ms)[0m   [0mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/materials]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SemiProductsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:56:03) [GET]
+  [4;36;1mSemiProduct Load (0.3ms)[0m   [0;1mSELECT * FROM `semi_products` [0m
+Rendering template within layouts/master
+Rendering semi_products/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/semi_products]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:56:07) [GET]
+  [4;35;1mMaterial Load (0.2ms)[0m   [0mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/materials]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SemiProductsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:56:08) [GET]
+  [4;36;1mSemiProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `semi_products` [0m
+Rendering template within layouts/master
+Rendering semi_products/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/semi_products]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SemiProductsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:56:18) [GET]
+  [4;35;1mSemiProduct Load (0.2ms)[0m   [0mSELECT * FROM `semi_products` [0m
+Rendering template within layouts/master
+Rendering semi_products/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/semi_products]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:56:20) [GET]
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/master
+Rendering products/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/products]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:57:07) [GET]
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` [0m
+Rendering template within layouts/master
+Rendering products/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/products]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InventoriesController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:57:11) [GET]
+  [4;36;1mInventory Load (0.4ms)[0m   [0;1mSELECT * FROM `inventories` [0m
+Rendering template within layouts/master
+Rendering inventories/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/inventories]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InventoriesController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:58:11) [GET]
+  [4;35;1mInventory Load (0.2ms)[0m   [0mSELECT * FROM `inventories` [0m
+Rendering template within layouts/master
+Rendering inventories/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/inventories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:58:15) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:59:09) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:59:21) [GET]
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 19ms (View: 11, DB: 2) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:59:33) [GET]
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 18ms (View: 10, DB: 2) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:59:42) [GET]
+  [4;36;1mMaterial Load (0.2ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/materials]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 17:01:40) [GET]
+  [4;35;1mMaterial Load (0.2ms)[0m   [0mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/materials]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 17:02:10) [GET]
+  [4;36;1mMaterial Load (0.2ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/materials]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 17:02:57) [GET]
+  [4;35;1mMaterial Load (0.3ms)[0m   [0mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 54ms (View: 6, DB: 0) | 200 OK [http://localhost/materials]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 17:03:08) [GET]
+  [4;36;1mMaterial Load (0.2ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/materials]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 17:03:24) [GET]
+  [4;35;1mMaterial Load (0.2ms)[0m   [0mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/materials]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 17:03:36) [GET]
+  [4;36;1mMaterial Load (0.2ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/materials]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 17:03:47) [GET]
+  [4;35;1mMaterial Load (0.2ms)[0m   [0mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/materials]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 17:03:57) [GET]
+Rendering template within layouts/master
+Rendering users/dashboard
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 17:03:59) [GET]
+  [4;36;1mMaterial Load (0.2ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/materials]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SemiProductsController#index (for ::ffff:127.0.0.1 at 2010-04-02 17:04:00) [GET]
+  [4;35;1mSemiProduct Load (0.2ms)[0m   [0mSELECT * FROM `semi_products` [0m
+Rendering template within layouts/master
+Rendering semi_products/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/semi_products]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 17:04:02) [GET]
+Rendering template within layouts/master
+Rendering users/dashboard
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 17:04:04) [GET]
+  [4;36;1mMaterial Load (0.2ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/materials]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SemiProductsController#index (for ::ffff:127.0.0.1 at 2010-04-02 17:04:04) [GET]
+  [4;35;1mSemiProduct Load (0.2ms)[0m   [0mSELECT * FROM `semi_products` [0m
+Rendering template within layouts/master
+Rendering semi_products/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/semi_products]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for ::ffff:127.0.0.1 at 2010-04-02 17:04:05) [GET]
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/master
+Rendering products/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/products]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InventoriesController#index (for ::ffff:127.0.0.1 at 2010-04-02 17:04:06) [GET]
+  [4;35;1mInventory Load (0.2ms)[0m   [0mSELECT * FROM `inventories` [0m
+Rendering template within layouts/master
+Rendering inventories/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/inventories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 17:04:07) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaterialsController#index (for ::ffff:127.0.0.1 at 2010-04-02 17:04:08) [GET]
+  [4;36;1mMaterial Load (0.3ms)[0m   [0;1mSELECT * FROM `materials` [0m
+Rendering template within layouts/master
+Rendering materials/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/materials]

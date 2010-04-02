@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   layout "master"
-  before_filter :authorize, :except => [:login, :logout, :dashboard]
+  before_filter :authorize, :except => [:login, :logout]
   
   # GET /users
   # GET /users.xml

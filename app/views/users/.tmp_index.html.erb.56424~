@@ -1,11 +1,11 @@
-<h1>Danh Sách Người Dùng</h1>
+<h1>Listing users</h1>
 
 <table>
   <tr>
-    <th>Tài Khoản</th>
-    <th>Họ và Tên</th>
+    <th>Username</th>
+    <th>Fullname</th>
     <th>Email</th>
-    <th>ĐTDĐ</th>
+    <th>Mobile phone</th>
   </tr>
 
 <% @users.each do |user| %>
@@ -23,4 +23,4 @@
 
 <br />
 
-<%= link_to 'Thêm Mới', new_user_path %>
+<%= link_to 'New user', new_user_path %>

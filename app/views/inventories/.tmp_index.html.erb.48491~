@@ -1,10 +1,12 @@
-<h1>Danh Sách Kho</h1>
+<h1>Listing inventories</h1>
 
 <table>
   <tr>
-    <th>Mã Số</th>
-    <th>Tên Kho</th>
-    <th>Người Phụ Trách</th>
+    <th>Code</th>
+    <th>Name</th>
+    <th>User</th>
+    <th>Address</th>
+    <th>Description</th>
   </tr>
 
 <% @inventories.each do |inventory| %>
@@ -12,6 +14,8 @@
     <td><%=h inventory.code %></td>
     <td><%=h inventory.name %></td>
     <td><%=h inventory.user_id %></td>
+    <td><%=h inventory.address %></td>
+    <td><%=h inventory.description %></td>
     <td><%= link_to 'Show', inventory %></td>
     <td><%= link_to 'Edit', edit_inventory_path(inventory) %></td>
     <td><%= link_to 'Destroy', inventory, :confirm => 'Are you sure?', :method => :delete %></td>
@@ -21,4 +25,4 @@
 
 <br />
 
-<%= link_to 'Thêm Mới', new_inventory_path %>
+<%= link_to 'New inventory', new_inventory_path %>

@@ -12,12 +12,9 @@
     <!-- Container -->
     <div>
     	<div>
-    		<div style="float: right; text-align: right">
-    			Xin chào, <%= session[:username] %>! <br/>
-				[<%= link_to "Đăng Xuất", logout_url %>]	
-    		</div>
-    		<%= image_tag("pis_logo.png") %>			 
-			[<%= link_to "Dashboard", root_url %>] -
+    		<%= image_tag("pis_logo.png") %>			
+			<%= session[:username] %> |
+			[<%= link_to "Logout", logout_url %>] >>>
 			[<%= link_to "Nguyên Liệu", materials_url %>] -
 			[<%= link_to "Bán Thành Phẩm", semi_products_url %>] - 
 			[<%= link_to "Thành Phẩm", products_url %>] -
