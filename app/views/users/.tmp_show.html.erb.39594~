@@ -4,6 +4,16 @@
 </p>
 
 <p>
+  <b>Hash password:</b>
+  <%=h @user.hash_password %>
+</p>
+
+<p>
+  <b>Salt:</b>
+  <%=h @user.salt %>
+</p>
+
+<p>
   <b>Fullname:</b>
   <%=h @user.fullname %>
 </p>

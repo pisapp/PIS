@@ -1,0 +1,61 @@
+<% form_for(@user) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </p>
+  <p>
+    Password<br />
+    <%= f.password_field :password %>
+  </p>
+  <p>
+    Confirmation<br />
+    <%= f.password_field :password_confirmation %>
+  </p>
+  <p>
+    <%= f.label :fullname %><br />
+    <%= f.text_field :fullname %>
+  </p>
+  <p>
+    <%= f.label :position_id %><br />
+    <%= f.text_field :position_id %>
+  </p>
+  <p>
+    <%= f.label :sex %><br />
+    <%= f.check_box :sex %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :is_admin %><br />
+    <%= f.check_box :is_admin %>
+  </p>
+  <p>
+    <%= f.label :is_blocked %><br />
+    <%= f.check_box :is_blocked %>
+  </p>
+  <p>
+    <%= f.label :can_not_delete %><br />
+    <%= f.check_box :can_not_delete %>
+  </p>
+  <p>
+    <%= f.label :mobile_phone %><br />
+    <%= f.text_field :mobile_phone %>
+  </p>
+  <p>
+    <%= f.label :address %><br />
+    <%= f.text_area :address %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.submit @user.new_record? ? 'Create' : 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', users_path %>

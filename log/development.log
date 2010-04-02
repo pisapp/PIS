@@ -261,3 +261,199 @@ Migrating to AddInventoryTypeToInventories (20100401080736)
   [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `weight_units`[0m
   [4;35;1mSQL (0.4ms)[0m   [0mdescribe `weight_units`[0m
   [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `weight_units`[0m
+  [4;36;1mSQL (27.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 15:42:20) [GET]
+  [4;36;1mUser Load (195.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering users/index
+Completed in 353ms (View: 134, DB: 223) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for ::ffff:127.0.0.1 at 2010-04-02 15:42:22) [GET]
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering users/new
+Completed in 89ms (View: 81, DB: 2) | 200 OK [http://localhost/users/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 15:47:57) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+Completed in 70ms (View: 56, DB: 1) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 15:48:56) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 15:50:50) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for ::ffff:127.0.0.1 at 2010-04-02 15:50:52) [GET]
+  [4;35;1mUser Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/master
+Rendering users/new
+Rendered users/_form (9.4ms)
+Completed in 24ms (View: 16, DB: 3) | 200 OK [http://localhost/users/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for ::ffff:127.0.0.1 at 2010-04-02 15:51:03) [GET]
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/master
+Rendering users/new
+Rendered users/_form (8.9ms)
+Completed in 21ms (View: 13, DB: 3) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for ::ffff:127.0.0.1 at 2010-04-02 15:51:55) [GET]
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/master
+Rendering users/new
+Rendered users/_form (8.6ms)
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/users/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for ::ffff:127.0.0.1 at 2010-04-02 15:52:09) [POST]
+  Parameters: {"user"=>{"is_blocked"=>"0", "password_confirmation"=>"", "is_admin"=>"0", "fullname"=>"", "username"=>"", "description"=>"", "sex"=>"0", "position_id"=>"", "address"=>"", "password"=>"", "mobile_phone"=>"", "can_not_delete"=>"0", "email"=>""}, "commit"=>"Create", "authenticity_token"=>"mPlU6zCUnDt2LSOH8zEdBFBHPikq1QptYl3SiGgx5/w="}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (26.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY '') LIMIT 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/master
+Rendering users/new
+Rendered users/_form (32.6ms)
+Completed in 107ms (View: 38, DB: 28) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 15:52:15) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+Completed in 8ms (View: 2, DB: 2) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for ::ffff:127.0.0.1 at 2010-04-02 15:52:17) [GET]
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/master
+Rendering users/new
+Rendered users/_form (7.0ms)
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/users/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for ::ffff:127.0.0.1 at 2010-04-02 15:56:54) [POST]
+  Parameters: {"user"=>{"is_blocked"=>"0", "password_confirmation"=>"pass@word1", "is_admin"=>"1", "fullname"=>"PIS Administrator", "username"=>"administrator", "description"=>"", "sex"=>"1", "position_id"=>"", "address"=>"", "password"=>"pass@word1", "mobile_phone"=>"0919007807", "can_not_delete"=>"1", "email"=>"pis.simplify@gmail.com"}, "commit"=>"Create", "authenticity_token"=>"mPlU6zCUnDt2LSOH8zEdBFBHPikq1QptYl3SiGgx5/w="}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+NoMethodError (undefined method `hashed_password=' for #<User:0xa941dd0>):
+  app/models/user.rb:38:in `password='
+  app/controllers/users_controller.rb:45:in `new'
+  app/controllers/users_controller.rb:45:in `create'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.5ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 15:58:47) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for ::ffff:127.0.0.1 at 2010-04-02 15:58:48) [GET]
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/master
+Rendering users/new
+Rendered users/_form (6.8ms)
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for ::ffff:127.0.0.1 at 2010-04-02 15:59:07) [POST]
+  Parameters: {"user"=>{"is_blocked"=>"0", "password_confirmation"=>"pass@word1", "is_admin"=>"1", "fullname"=>"PIS Administrator", "username"=>"administrator", "description"=>"", "sex"=>"1", "position_id"=>"", "address"=>"", "password"=>"pass@word1", "mobile_phone"=>"0919007807", "can_not_delete"=>"0", "email"=>"pis.simplify@gmail.com"}, "commit"=>"Create", "authenticity_token"=>"mPlU6zCUnDt2LSOH8zEdBFBHPikq1QptYl3SiGgx5/w="}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'administrator') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`salt`, `hash_password`, `is_blocked`, `updated_at`, `username`, `fullname`, `is_admin`, `position_id`, `sex`, `description`, `address`, `email`, `can_not_delete`, `mobile_phone`, `created_at`) VALUES('873757800.988633739123109', 'a95a5cac00b770f3931e6622efb5412a9786bd9a', 0, '2010-04-02 08:59:07', 'administrator', 'PIS Administrator', 1, NULL, 1, '', '', 'pis.simplify@gmail.com', 0, '0919007807', '2010-04-02 08:59:07')[0m
+  [4;35;1mSQL (57.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed in 73ms (DB: 59) | 302 Found [http://localhost/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for ::ffff:127.0.0.1 at 2010-04-02 15:59:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/master
+Rendering users/show
+Completed in 72ms (View: 64, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for ::ffff:127.0.0.1 at 2010-04-02 15:59:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/master
+Rendering users/show
+Completed in 15ms (View: 7, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 15:59:26) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 14ms (View: 6, DB: 2) | 200 OK [http://localhost/users]
