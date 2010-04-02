@@ -1,4 +1,7 @@
 class SemiProductExchangesController < ApplicationController
+  layout "master"
+  before_filter :authorize
+  
   # GET /semi_product_exchanges
   # GET /semi_product_exchanges.xml
   def index

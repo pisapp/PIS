@@ -1,4 +1,7 @@
 class InventoryTypesController < ApplicationController
+  layout "master"
+  before_filter :authorize
+  
   # GET /inventory_types
   # GET /inventory_types.xml
   def index

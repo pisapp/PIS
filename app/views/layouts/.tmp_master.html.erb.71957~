@@ -12,18 +12,13 @@
     <!-- Container -->
     <div>
     	<div>
-    		<%= image_tag("pis_logo.png") %>
-			<% if session[:username] %>
-				<%= session[:username] %> |
-				[<%= link_to "Logout", logout_url %>]
-			<% end %>
+    		<h1>Header here</h1>
     	</div>
 		<div>
 			<%= yield  %>	
 		</div>
 		<div>
-			<hr/>
-			[Footer here]
+			<h1>Footer here</h1>
 		</div>
     </div>        
 </body>

@@ -1,4 +1,7 @@
 class WeightUnitsController < ApplicationController
+  layout "master"
+  before_filter :authorize
+  
   # GET /weight_units
   # GET /weight_units.xml
   def index

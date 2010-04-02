@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   layout "master"
+  before_filter :authorize, :except => [:login, :logout, :dashboard]
   
   # GET /users
   # GET /users.xml
@@ -98,7 +99,7 @@ class UsersController < ApplicationController
         # Set current user
         User.current_user = user
         flash[:notice] = "Welcome #{user.username}!"
-        redirect_to administration_url
+        redirect_to root_url
       else
         flash[:notice] = "Username or Password is invalid!"
       end

@@ -457,3 +457,832 @@ Rendering template within layouts/master
 Rendering users/index
   [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
 Completed in 14ms (View: 6, DB: 2) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:08:02) [GET]
+Redirected to http://localhost:3000/users/log/in
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#login (for ::ffff:127.0.0.1 at 2010-04-02 16:08:02) [GET]
+  Parameters: {"method"=>{"post"=>:get}}
+Rendering template within layouts/master
+Rendering users/login
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/users/log/in]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:10:57) [GET]
+Redirected to http://localhost:3000/users/log/in
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#login (for ::ffff:127.0.0.1 at 2010-04-02 16:10:57) [GET]
+  Parameters: {"method"=>{"post"=>:get}}
+Rendering template within layouts/master
+Rendering users/login
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/users/log/in]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#login (for ::ffff:127.0.0.1 at 2010-04-02 16:11:07) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"mPlU6zCUnDt2LSOH8zEdBFBHPikq1QptYl3SiGgx5/w=", "username"=>"administrator", "password"=>""}
+  [4;36;1mUser Columns (64.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'administrator') LIMIT 1[0m
+
+NoMethodError (undefined method `hashed_password' for #<User:0xa627b90>):
+  app/models/user.rb:46:in `authenticate'
+  app/controllers/users_controller.rb:93:in `login'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (72.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#login (for ::ffff:127.0.0.1 at 2010-04-02 16:11:27) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"mPlU6zCUnDt2LSOH8zEdBFBHPikq1QptYl3SiGgx5/w=", "username"=>"administrator", "password"=>""}
+  [4;36;1mUser Columns (7.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'administrator') LIMIT 1[0m
+Rendering template within layouts/master
+Rendering users/login
+Completed in 20ms (View: 3, DB: 8) | 200 OK [http://localhost/users/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#login (for ::ffff:127.0.0.1 at 2010-04-02 16:11:36) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"mPlU6zCUnDt2LSOH8zEdBFBHPikq1QptYl3SiGgx5/w=", "username"=>"administrator", "password"=>"pass@word1"}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'administrator') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/users/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:12:03) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/users]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:27) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 1) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:27) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:27) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:27) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:28) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:28) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:28) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:28) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:28) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:28) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:28) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:28) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:28) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:28) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:29) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:29) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:29) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:29) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:29) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:29) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:29) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:12:36) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:36) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:36) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:36) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:36) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:36) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:36) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:37) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:37) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:37) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:37) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:37) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:37) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:37) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:37) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:37) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:37) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:37) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:38) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:38) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:12:38) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:14:03) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:14:08) [GET]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dashboard]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:14:08) [GET]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dashboard]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:14:08) [GET]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/dashboard]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:14:09) [GET]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/dashboard]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:14:09) [GET]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dashboard]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:14:09) [GET]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dashboard]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:14:09) [GET]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dashboard]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:14:09) [GET]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dashboard]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:14:09) [GET]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dashboard]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:14:09) [GET]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dashboard]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:14:09) [GET]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dashboard]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:14:09) [GET]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dashboard]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:14:09) [GET]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dashboard]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:14:10) [GET]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dashboard]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:14:10) [GET]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dashboard]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:14:10) [GET]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dashboard]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:14:10) [GET]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dashboard]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:14:10) [GET]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dashboard]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:14:10) [GET]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dashboard]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:14:10) [GET]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dashboard]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:14:10) [GET]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dashboard]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:15:01) [GET]
+
+ActionController::RoutingError (No route matches "/dashboard" with {:method=>:get}):
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:15:06) [GET]
+Rendering template within layouts/master
+Rendering users/dashboard
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:15:10) [GET]
+
+NameError (undefined local variable or method `dashboard_url' for #<UsersController:0x923e9f8>):
+  app/controllers/application_controller.rb:13:in `authorize'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/ruby-enterprise-1.8.6-20090610/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (30.5ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:15:25) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:15:25) [GET]
+Rendering template within layouts/master
+Rendering users/dashboard
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:15:59) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 25ms (View: 10, DB: 2) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:19:33) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:23:26) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:23:33) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 14ms (View: 7, DB: 2) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:24:35) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/master
+Rendering users/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#logout (for ::ffff:127.0.0.1 at 2010-04-02 16:24:49) [GET]
+  Parameters: {"method"=>{"post"=>:get}}
+Redirected to http://localhost:3000/users/log/in
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/users/log/out]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#login (for ::ffff:127.0.0.1 at 2010-04-02 16:24:49) [GET]
+  Parameters: {"method"=>{"post"=>:get}}
+Rendering template within layouts/master
+Rendering users/login
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/users/log/in]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:24:53) [GET]
+Redirected to http://localhost:3000/users/log/in
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#login (for ::ffff:127.0.0.1 at 2010-04-02 16:24:53) [GET]
+  Parameters: {"method"=>{"post"=>:get}}
+Rendering template within layouts/master
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/log/in]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#login (for ::ffff:127.0.0.1 at 2010-04-02 16:24:59) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"THhXtgYGkKM8M1UMfsBnqLS5sOSIEcFgcPF5zJgayUQ=", "username"=>"administrator", "password"=>"pass@word1"}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'administrator') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/users/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:24:59) [GET]
+Rendering template within layouts/master
+Rendering users/dashboard
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:25:23) [GET]
+Rendering template within layouts/master
+Rendering users/dashboard
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:25:38) [GET]
+Rendering template within layouts/master
+Rendering users/dashboard
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#logout (for ::ffff:127.0.0.1 at 2010-04-02 16:27:46) [GET]
+  Parameters: {"method"=>{"post"=>:get}}
+Redirected to http://localhost:3000/users/log/in
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/users/log/out]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#login (for ::ffff:127.0.0.1 at 2010-04-02 16:27:46) [GET]
+  Parameters: {"method"=>{"post"=>:get}}
+Rendering template within layouts/master
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/log/in]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:27:50) [GET]
+Redirected to http://localhost:3000/users/log/in
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/products]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#login (for ::ffff:127.0.0.1 at 2010-04-02 16:27:50) [GET]
+  Parameters: {"method"=>{"post"=>:get}}
+Rendering template within layouts/master
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/log/in]

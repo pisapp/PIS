@@ -1,4 +1,7 @@
 class QuantityUnitsController < ApplicationController
+  layout "master"
+  before_filter :authorize
+  
   # GET /quantity_units
   # GET /quantity_units.xml
   def index

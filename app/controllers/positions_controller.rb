@@ -1,4 +1,7 @@
 class PositionsController < ApplicationController
+  layout "master"
+  before_filter :authorize
+  
   # GET /positions
   # GET /positions.xml
   def index

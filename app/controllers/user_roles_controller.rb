@@ -1,4 +1,7 @@
 class UserRolesController < ApplicationController
+  layout "master"
+  before_filter :authorize
+  
   # GET /user_roles
   # GET /user_roles.xml
   def index

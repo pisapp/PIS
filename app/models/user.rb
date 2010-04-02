@@ -43,7 +43,7 @@ class User < ActiveRecord::Base
     user = self.find_by_username(name)
     if user
       expected_password = encrypted_password(password, user.salt)
-      if user.hashed_password != expected_password
+      if user.hash_password != expected_password
         user = nil
       end
     end

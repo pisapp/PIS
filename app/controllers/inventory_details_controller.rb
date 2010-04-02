@@ -1,4 +1,7 @@
 class InventoryDetailsController < ApplicationController
+  layout "master"
+  before_filter :authorize
+  
   # GET /inventory_details
   # GET /inventory_details.xml
   def index

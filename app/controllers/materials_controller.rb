@@ -1,4 +1,7 @@
 class MaterialsController < ApplicationController
+  layout "master"
+  before_filter :authorize
+  
   # GET /materials
   # GET /materials.xml
   def index
