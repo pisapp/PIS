@@ -1286,3 +1286,28 @@ Processing UsersController#login (for ::ffff:127.0.0.1 at 2010-04-02 16:27:50) [
 Rendering template within layouts/master
 Rendering users/login
 Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/log/in]
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#dashboard (for ::ffff:127.0.0.1 at 2010-04-02 16:29:40) [GET]
+Rendering template within layouts/master
+Rendering users/dashboard
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for ::ffff:127.0.0.1 at 2010-04-02 16:30:36) [GET]
+Redirected to http://localhost:3000/users/log/in
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#login (for ::ffff:127.0.0.1 at 2010-04-02 16:30:36) [GET]
+  Parameters: {"method"=>{"post"=>:get}}
+Rendering template within layouts/master
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/log/in]
